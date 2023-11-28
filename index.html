@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="container">
+      <input id="result" type="text" class="display" />
+
+      <div class="buttons">
+        <button class="operator" onclick="ac()" data-value="AC">AC</button>
+        <button class="operator" onclick="del()" data-value="DEL">DEL</button>
+        <button class="operator" onclick="displayValue('%')" data-value="%">%</button>
+        <button class="operator" onclick="displayValue('/')" data-value="/">/</button>
+
+        <button class="numbers" onclick="displayValue(7)" data-value="7">7</button>
+        <button class="numbers" onclick="displayValue(8)" data-value="8">8</button>
+        <button class="numbers" onclick="displayValue(9)" data-value="9">9</button>
+        <button class="operator" onclick="displayValue('*')" data-value="*">*</button>
+
+        <button class="numbers"onclick="displayValue(4)" data-value="4">4</button>
+        <button class="numbers" onclick="displayValue(5)" data-value="5">5</button>
+        <button class="numbers" onclick="displayValue(6)" data-value="6">6</button>
+        <button class="operator" onclick="displayValue('-')" data-value="-">-</button>
+
+        <button class="numbers" onclick="displayValue(1)" data-value="1">1</button>
+        <button class="numbers" onclick="displayValue(2)" data-value="2">2</button>
+        <button class="numbers" onclick="displayValue(3)" data-value="3">3</button>
+        <button class="operator" onclick="displayValue('+')" data-value="+">+</button>
+
+        <button class="numbers" onclick="displayValue(0)" data-value="0">0</button>
+        <button class="numbers" onclick="displayValue('00')" data-value="00">00</button>
+        <button class="numbers" onclick="displayValue('.')" data-value=".">.</button>
+        <button class="operator" onclick="out()" data-value="=">=</button>
+      </div>
+    </div> 
+  </body>
+  <script src="calc.js"></script>
+</html>
